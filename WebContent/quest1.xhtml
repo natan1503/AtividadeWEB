@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>Questao 1</title>
+	</head>
+	
+	<body>
+		<h:form>
+			CAMPO 1: <h:inputText value="${questao1.campo1}">
+			</h:inputText>
+			CAMPO 2: <h:inputText value="${questao1Bean.campo2}">
+			</h:inputText>
+	
+			<h:commandButton id="inverter" 
+				actionListener="#{questao1Bean.invertesCampos()}" 
+				value="Enviar"/>
+			
+		</h:form>
+		
+
+	</body>
+</html>

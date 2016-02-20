@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ATIVIDADE</title>
+	</head>
+	<body>
+		
+		<h:form>
+			Nome: <h:inputText value="${pessoaBean.pessoa.nome}">
+			</h:inputText>
+			Data de Nascimento <h:inputText value="${pessoaBean.pessoa.dataNascimento}">
+			</h:inputText>
+			Matricula: <h:inputText value="${pessoaBean.pessoa.matricula}">
+			</h:inputText>
+			
+
+			<h:commandButton id="enviar" 
+				actionListener="#{pessoaBean.enviar}" 
+				value="Enviar"/>
+			
+		</h:form>
+		
+	</body>
+</html>
