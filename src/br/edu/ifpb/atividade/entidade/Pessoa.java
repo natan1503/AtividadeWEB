@@ -1,16 +1,25 @@
 package br.edu.ifpb.atividade.entidade;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_pessoas")
+@NamedQuery(name = "Pessoa.getAll", query= " from Pessoa")
 public class Pessoa {
-	
+
+	@Column (name = "nome")
 	private String Nome;
-	
+
+	@Column (name = "dataNascimento")
 	private String dataNascimento;
 	
+	@Column (name = "matricula")
 	private String Matricula;
-	
-	public Pessoa(){
-		
-	}
+
 
 	public String getNome() {
 		return Nome;
@@ -35,6 +44,10 @@ public class Pessoa {
 	public void setMatricula(String matricula) {
 		Matricula = matricula;
 	}
-	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + Nome + ", nascimento="
+				+ dataNascimento + ", matricula=" + Matricula + "]";
+	}
 
 }

@@ -4,7 +4,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
 @RequestScoped
-@ManagedBean
+@ManagedBean(name="Questao1Bean")
 public class Questao1Bean {
 	
 	private String campo1;

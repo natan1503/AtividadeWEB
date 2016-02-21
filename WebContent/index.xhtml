@@ -11,16 +11,19 @@
 	<body>
 		
 		<h:form>
-			Nome: <h:inputText value="${pessoaBean.pessoa.nome}">
+			Nome: <h:inputText value="${PessoaBean.pessoa.nome}">
 			</h:inputText>
-			Data de Nascimento <h:inputText value="${pessoaBean.pessoa.dataNascimento}">
+			<br/>
+			Data de Nascimento <h:inputText value="${PessoaBean.pessoa.dataNascimento}">
 			</h:inputText>
-			Matricula: <h:inputText value="${pessoaBean.pessoa.matricula}">
+			<br/>
+			Matricula: <h:inputText value="${PessoaBean.pessoa.matricula}">
 			</h:inputText>
+			<br/>
 			
 
 			<h:commandButton id="enviar" 
-				actionListener="#{pessoaBean.enviar}" 
+				actionListener="#{PessoaBean.registrar()}" 
 				value="Enviar"/>
 			
 		</h:form>

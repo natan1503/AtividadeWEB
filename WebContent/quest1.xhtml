@@ -11,13 +11,14 @@
 	
 	<body>
 		<h:form>
-			CAMPO 1: <h:inputText value="${questao1.campo1}">
+			CAMPO 1: <h:inputText value="${Questao1Bean.campo1}">
 			</h:inputText>
-			CAMPO 2: <h:inputText value="${questao1Bean.campo2}">
+			<br/>
+			CAMPO 2: <h:inputText value="${Questao1Bean.campo2}">
 			</h:inputText>
-	
+			<br/>
 			<h:commandButton id="inverter" 
-				actionListener="#{questao1Bean.invertesCampos()}" 
+				actionListener="#{Questao1Bean.inverterCampos()}" 
 				value="Enviar"/>
 			
 		</h:form>
